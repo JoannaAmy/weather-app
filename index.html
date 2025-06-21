@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <input type="text" class="search" placeholder="Lagos, Nigeria" />
+        <button type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <p class="error-message" style="color: red; display: none"></p>
+      <section class="result hidden">
+        <div class="city-details">
+          <p class="city-name"></p>
+          <img class="city-flag" />
+        </div>
+
+        <img class="result-img" />
+
+        <ul class="temp-results">
+          <li>
+            <p><span class="result-temp"></span><sup>0</sup></p>
+          </li>
+          <li>
+            <small>
+              <p class="result-temp-description"></p>
+            </small>
+          </li>
+        </ul>
+
+        <div>
+          <ul class="other-weather">
+            <li>
+              <span>Clouds</span>
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+              <span class="result-clouds"></span>%
+            </li>
+
+            <li>
+              <span>Wind</span>
+              <i class="fas fa-wind"></i>
+              <span class="result-wind"></span>m/s
+            </li>
+
+            <li>
+              <span>Humidity</span>
+              <i class="fa fa-tint" aria-hidden="true"></i>
+              <span class="result-humidity"></span>%
+            </li>
+
+            <li>
+              <span>Pressure</span>
+              <i class="fa-solid fa-gauge"></i>
+              <span class="result-pressure"></span>hPa
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
