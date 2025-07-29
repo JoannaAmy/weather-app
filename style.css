@@ -58,7 +58,7 @@ li {
 .result {
   padding-top: 50px;
 }
-.error-message{
+.error-message, .loading-message{
     margin: 30px;
 }
 

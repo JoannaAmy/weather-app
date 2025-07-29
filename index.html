@@ -14,13 +14,15 @@
   <body>
     <main>
       <form action="">
-        <input type="text" class="search" placeholder="Lagos, Nigeria" />
+        <input type="text" class="search" placeholder="Enter a city" />
         <button type="submit">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
       </form>
-      <p class="error-message" style="color: red; display: none"></p>
-      <section class="result hidden">
+      
+      <p class="error-message" style="color: red; display: none">City not found. Please Check Spelling</p>
+       <p class="loading-message" style="color: blue; display: none">Loading...</p>
+      <section class="result">
         <div class="city-details">
           <p class="city-name"></p>
           <img class="city-flag" />
